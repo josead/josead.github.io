@@ -32,17 +32,18 @@ header h4 {
     margin: 0;
 }
 .presentation {
-    width: 79%;
+    padding-left: 10px;
+    width: 72%;
     vertical-align: top;
     display: inline-block;
 }
 .photo {
     background: url('../Photobw.jpg');
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 1px solid white;
     background-size: cover;
-    background-position-y: 50%;
+    text-align: center;
     display: inline-block;
 }
 .uppercased{
