@@ -37,8 +37,8 @@ header h4 {
     display: inline-block;
 }
 .photo {
-    background: url('../photobw.jpg');
-    width: 150px;
+    background: url('../Photobw.jpg');
+    width: 200px;
     height: 200px;
     border: 1px solid white;
     background-size: cover;
