@@ -1,6 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Economica:400,400italic);
 
-.main-card {
+html, body {
+    background: #15BC90;
 }
 
-.description-card {
+header {
+    font-family: Roboto;
+    margin-top: 50px;
+    border: 2px white solid;
+}
+
+header h1 {
+    font-size: 2.3em;
+}
+header h1,
+header h4 {
+    margin: 0;
+}
+
+section {
+    font-family: Alegreya Sans SC;
+}
+
+.uppercased{
+    text-transform: uppercase;
+}
+
+.card .fancy-content .title{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        position: relative;
+        width: 840px;
+        padding: 10px;
+        left: calc(50% - 420px);
+    }
+    .card .simple-content{
+        background: white;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .card .full-width-content {
+        width: 100%;
+    }
+    .card .title {
+        position: relative;
+        width: calc(100% + 20px);
+        left: -10px;
+        padding: 0 10px;
+        box-shadow: 0 1px 2px -1px;
+        background: #FFFCD2;
+    }
+    .card .title.fancy-title {
+        width: 100%;
+        left: 0;
+    }
+
+    .card span {
+        color: #FC763E;
+        font-weight: bold;
+    }
+}
+
+.card .title.width-75-content {
+    width: 74%;
+    display: inline-block;
+}
+
+.card .title.width-25-content {
+    width: 25%;
+    display: inline-block;
+}
+.card .width-75-content {
+    width: 74%;
+    display: inline-block;
+}
+
+.card .width-25-content {
+    width: 25%;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+#MyName {
+    color: white;
+}
+
+#GlbTitle {
+    background: #96F0B3;
+}
+#GlbTitle span {
+    color: #575757;
+}
+
+#ParraStudiosTitle {
+    background: #96F0ED;
+}
+#ParraStudiosTitle span {
+    color: #575757;
 }
