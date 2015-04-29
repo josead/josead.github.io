@@ -7,9 +7,16 @@ html, body {
 
 }
 
-header {
+header{
     margin-top: 50px;
     border: 2px white solid;
+}
+
+footer {
+    margin-bottom: 50px;
+    border: 2px white solid;
+    text-align: center;
+    color: white;
 }
 
 header h1 {
@@ -24,7 +31,20 @@ header h1,
 header h4 {
     margin: 0;
 }
-
+.presentation {
+    width: 79%;
+    vertical-align: top;
+    display: inline-block;
+}
+.photo {
+    background: url('../photobw.jpg');
+    width: 150px;
+    height: 200px;
+    border: 1px solid white;
+    background-size: cover;
+    background-position-y: 50%;
+    display: inline-block;
+}
 .uppercased{
     text-transform: uppercase;
 }
@@ -33,42 +53,59 @@ header h4 {
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-
+.card {
+    position: relative;
+    width: 840px;
+    padding: 10px;
+    left: calc(50% - 420px);
+}
+.card:nth-child(1),
+.card:last-child{
+    box-shadow: inset 0px 0px 17px 14px white;
 }
 
-@media only screen and (min-width: 1024px) {
-    .card {
-        position: relative;
-        width: 840px;
-        padding: 10px;
-        left: calc(50% - 420px);
-    }
-    .card .simple-content{
-        color: white;
-        background: #999AB8;
-        padding: 10px;
-    }
-    .card .full-width-content {
-        width: 100%;
-    }
-    .card .title {
-        position: relative;
-        width: calc(100% + 20px);
-        left: -10px;
-        padding: 0 10px;
-        box-shadow: -5px 0px 0px 0px #FFD62E;
-        background: #FFFFFF;
-    }
-    .card .title.fancy-title {
-        width: 100%;
-        left: 0;
-    }
+header.card {
+    box-shadow: none!important;
+}
 
-    .card span {
-        color: #1A1C3A;
-        font-weight: bold;
-    }
+.card .simple-content{
+    color: white;
+    background: #999AB8;
+    padding: 10px;
+    box-shadow: inset 0px -10px #F9F3C9;;
+    border-radius: 0 0 10px 10px;
+}
+.card .full-width-content {
+    width: 100%;
+}
+.card .title {
+    position: relative;
+    width: calc(100% + 20px);
+    left: -10px;
+    padding: 0 10px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: -5px 0 0 #FFD62E;
+    background: #FFFFFF;
+}
+.card .title.fancy-title {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    background: #D0D2E7;
+}
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card a.fa {
+    color: white;
+    font-size: xx-large;
+}
+
+.card span {
+    color: #1A1C3A;
+    font-weight: bold;
 }
 
 .card .title.width-75-content {
@@ -91,20 +128,18 @@ header h4 {
     vertical-align: top;
 }
 
+.card .contact-content {
+    text-align: center;
+}
+
 #MyName {
     color: white;
 }
 
-#GlbTitle {
-    background: white;
-}
 #GlbTitle span {
-    color: #FF0000;
+    color: #782E3A;
 }
 
-#ParraStudiosTitle {
-    background: white;
-}
 #ParraStudiosTitle span {
-    color: #FF0000;
+    color: #782E3A;
 }
