@@ -1,0 +1,89 @@
+.hidden {
+  display: none;
+}
+header {
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+header .header-bar {
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+@media only screen and (min-width: 950px) {
+  header .header-bar {
+    height: 250px;
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  header .header-bar {
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 529px) {
+  header .header-bar {
+    height: 40px;
+  }
+}
+header .header-bar .title {
+  cursor: default;
+  position: relative;
+  top: -200px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+@media only screen and (min-width: 950px) {
+  header .header-bar .title {
+    font-size: 7em;
+  }
+}
+header .header-bar .title.animate-ready {
+  -webkit-transition: top 300ms ease-in;
+  -moz-transition: top 300ms ease-in;
+  -ms-transition: top 300ms ease-in;
+  -o-transition: top 300ms ease-in;
+  top: 60px;
+}
+header .header-bar.menu-container {
+  clear: both;
+  height: 40px;
+  background: #f0141e;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header .header-bar.menu-container ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .header-bar.menu-container ul li {
+  color: white;
+  font-size: 2em;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+header .header-bar.menu-container ul li a {
+  -webkit-transition: font-size 70ms ease-out;
+  -moz-transition: font-size 70ms ease-out;
+  -ms-transition: font-size 70ms ease-out;
+  -o-transition: font-size 70ms ease-out;
+}
+header .header-bar.menu-container ul li:hover {
+  background: white;
+}
+header .header-bar.menu-container ul li:hover a {
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  font-size: 2.5em;
+  color: #f0141e;
+  -webkit-transition: font-size 50ms ease-out;
+  -moz-transition: font-size 50ms ease-out;
+  -ms-transition: font-size 50ms ease-out;
+  -o-transition: font-size 50ms ease-out;
+}
