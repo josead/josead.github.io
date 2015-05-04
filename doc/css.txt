@@ -1,0 +1,7 @@
+
+## Normalize.css
+
+In order to make browsers render all elements more consistently and in line
+with modern standards, I include Normalize.
+[Normalize.css](https://necolas.github.io/normalize.css/) — a modern, HTML5-ready
+alternative to CSS resets.
