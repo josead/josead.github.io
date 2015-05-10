@@ -1,160 +1,143 @@
-@import url(http://fonts.googleapis.com/css?family=Economica:400,400italic);
-
 html, body {
-    background: #1A1C3A;
-    font-size: 1.1em;
+    background: #FAFAFA;
     font-family: Roboto;
-
+    text-align: center;
 }
 
 header{
-    margin-top: 50px;
-    border: 2px white solid;
+    top: 0;
+    position: fixed;
+    left: 0px;
+    background: #00bcd4;
+    width: 100%;
+    height: 200pt;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
-footer {
-    margin-bottom: 50px;
-    border: 2px white solid;
-    text-align: center;
+header.fixed {
+    position: fixed;
+    height: 60pt;
+    left: 0px;
+}
+header.z-indexed {
+    z-index: 20;
+}
+
+section {
+    position: absolute;
+    top: 300pt;
+}
+
+h1 {
+    font-size: 30pt;
     color: white;
-}
-
-header h1 {
-    font-size: 2.3em;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 header h4 {
-    font-size: 1.4em;
-    color: #FFD62E;
-}
-
-header h1,
-header h4 {
-    margin: 0;
+    color: #263238;
 }
 .presentation {
-    padding-left: 10px;
-    width: 72%;
-    vertical-align: top;
-    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 34%;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.presentation.top-fixed {
+    top: 1pt;
+}
+.presentation.top-fixed #MyName{
+    font-size: 21pt;
+}
+.presentation h1,
+.presentation h4 {
+    padding: 0;
+    margin: 0;
 }
 .photo {
     background: url('../Photobw.jpg');
     width: 150px;
     height: 150px;
-    border: 1px solid white;
+    margin-left: 10pt;
+    border-radius: 100px;
     background-size: cover;
-    text-align: center;
-    display: inline-block;
+    box-shadow: 0 5pt 5pt rgba(0,0,0,0.2);
+    position: fixed;
+    top: 41pt;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.photo.top-fixed {
+    top: 1pt;
+}
+.photo.smaller {
+    height: 80pt;
+    width: 80pt;
+    box-shadow: 0 0 0;
 }
 .uppercased{
     text-transform: uppercase;
 }
 
-.card .fancy-content .title{
-    text-align: center;
+.mini-header {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    display: inline-block;
 }
 
 .card {
+    top: -20pt;
+    background: white;
     position: relative;
-    width: 840px;
-    padding: 10px;
-    left: calc(50% - 420px);
-}
-.card:nth-child(1),
-.card:last-child{
-    box-shadow: inset 0px 0px 17px 14px white;
-}
-
-header.card {
-    box-shadow: none!important;
-}
-
-.card .simple-content{
-    color: white;
-    background: #999AB8;
-    padding: 10px;
-    box-shadow: inset 0px -10px #F9F3C9;;
-    border-radius: 0 0 10px 10px;
-}
-.card .full-width-content {
-    width: 100%;
+    width: 1000px;
+    padding: 25pt;
+    margin-bottom: 10pt;
+    display:inline-block;
+    box-sizing: border-box;
+    box-shadow: 0 5pt 5pt rgba(0,0,0,0.2);
+    -moz-transform: translate3d(0,500px,0);
+    opacity: 0;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transition-timing-function: cubic-bezier(0.36,0.27,0,1);
+    transition-timing-function: cubic-bezier(0.36,0.27,0,1);
 }
 .card .title {
-    position: relative;
-    width: calc(100% + 20px);
-    left: -10px;
-    padding: 0 10px;
-    border-radius: 0 10px 10px 10px;
-    box-shadow: -5px 0 0 #FFD62E;
-    background: #FFFFFF;
+   font-size: 15pt;
 }
-.card .title.fancy-title {
-    width: 100%;
-    left: 0;
-    border-radius: 0;
-    background: #D0D2E7;
-}
-.card a {
-    text-decoration: none;
-    color: white;
+.simple-content {
+    color: #2F2F2F;
 }
 
-.card a.fa {
-    color: white;
-    font-size: xx-large;
-}
-
-.card span {
-    color: #1A1C3A;
-    font-weight: bold;
-}
-
-.card .title.width-75-content {
-    width: 74%;
-    display: inline-block;
-}
-
-.card .title.width-25-content {
-    width: 24%;
-    display: inline-block;
-}
-.card .width-75-content {
-    width: 74%;
-    display: inline-block;
-}
-
-.card .width-25-content {
-    width: 24%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.card .contact-content {
-    text-align: center;
-}
-
-#MyName {
-    color: white;
-}
-
-#GlbTitle span {
-    color: #782E3A;
-}
-
-#ParraStudiosTitle span {
-    color: #782E3A;
-}
-
-@media screen and (max-width:850px) {
-    html ,body {
-        font-size: 1rem;
-    }
-    header, footer {
-        margin: 0;
-    }
+@media screen and (max-width:1000px) {
     .card {
         position: relative;
-        width: 100vw;
+        width: 100%;
         left: 0;
     }
 }
+
+footer {
+    background: #263238;
+    height: 100pt;
+    color: white;
+
+}
+
