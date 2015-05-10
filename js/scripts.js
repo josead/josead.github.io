@@ -5,9 +5,11 @@ $(document).ready(function	() {
 	$.each($('.card'), function(i, el){
 
 	    setTimeout(function(){
-	    	$(el).animate({ '-moz-transform': 'translate3d(0,0,0)', opacity: 1}, {
+	    	$(el).animate({ 'transform': 'translate3d(0,0,0)', opacity: 1}, {
 			    step: function(now,fx) {
+			    	$(this).css('-webkit-transform','translate3d(0,0,0)');
 			    	$(this).css('-moz-transform','translate3d(0,0,0)');
+			    	$(this).css('transform','translate3d(0,0,0)');
 			    }, duration:'fast'}
 			);
 	    }, 200 + ( i * 200 ));
