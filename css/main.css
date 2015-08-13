@@ -128,6 +128,13 @@ header h4 {
 .simple-content {
     color: #2F2F2F;
     border-left: 2px solid #00bcd4;
+    padding: 10px 0 10px 40px;
+    text-align: left;
+}
+
+.title.fancy-title {
+  border-left: 2px solid #008899;
+  margin-left: 2px;
 }
 
 @media screen and (max-width:1000px) {
