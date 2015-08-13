@@ -122,10 +122,12 @@ header h4 {
     transition-timing-function: cubic-bezier(0.36,0.27,0,1);
 }
 .card .title {
-   font-size: 15pt;
+    font-size: 15pt;
+    border-left: 2px solid #00bcd4;
 }
 .simple-content {
     color: #2F2F2F;
+    border-left: 2px solid #00bcd4;
 }
 
 @media screen and (max-width:1000px) {
