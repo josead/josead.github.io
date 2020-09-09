@@ -1,24 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Jose Antonio Dominguez - Resume</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Jose's Site | Software Developer</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
 
-        <!-- Place favicon.ico in the root directory -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <style>
+      @font-face {
+        font-family: "LeagueSpartan";
+        src: url(./assets/LeagueSpartan-Bold.otf);
+      }
 
-        Under construction
+      .d-bg {
+        margin-top: 7rem;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAJklEQVQokWNkYGD4//8/A9GAkSTVDAwMTCSpHtUwqmHANDAwMAAA2HgGGWK6pJkAAAAASUVORK5CYII=")
+          repeat;
+        width: 100%;
+        right: 10rem;
+        height: 100vh;
+        position: absolute;
+        image-rendering: pixelated;
+        z-index: -2;
+      }
 
-    </body>
+      .l-max {
+        max-width: 80rem;
+        width: 100%;
+        margin: auto;
+        position: relative;
+      }
+
+      header {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-family: "LeagueSpartan";
+        font-size: 2.72rem;
+        position: relative;
+        display: inline-block;
+        padding: 1rem;
+        text-shadow: #ffff00 -3px -3px;
+        color: #333;
+        margin: 3rem 0;
+        white-space: nowrap;
+      }
+
+      h1:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        height: 4rem;
+        width: 100%;
+        left: 0;
+        top: 1px;
+        background: #ffee00;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="l-max">
+      <div class="d-bg"></div>
+      <header>
+        <h1>Jose’s Site</h1>
+      </header>
+    </div>
+
+    <script>
+      document.addEventListener("wheel", (e) => {
+        if (e.ctrlKey) return false; //prevent zoom
+      });
+    </script>
+  </body>
 </html>
